@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoGlance – Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; letter-spacing: 0.02em; }
+    header p  { margin-top: 0.4rem; opacity: 0.7; font-size: 0.95rem; }
+    main {
+      max-width: 760px;
+      margin: 3rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 2.2rem 0 0.6rem;
+      color: #1a1a2e;
+    }
+    p { margin-bottom: 0.8rem; }
+    ul {
+      margin: 0.4rem 0 0.8rem 1.4rem;
+    }
+    ul li { margin-bottom: 0.3rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.6rem 0 1rem;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.55rem 0.8rem;
+      border: 1px solid #ddd;
+    }
+    th { background: #f0f0f0; font-weight: 600; }
+    code {
+      background: #eef;
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    a { color: #4a6cf7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .updated {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 0.3rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #aaa;
+      padding: 2rem;
+      border-top: 1px solid #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AutoGlance</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<main>
+  <p class="updated">Last updated: April 26, 2025</p>
+
+  <h2>Overview</h2>
+  <p>
+    AutoGlance is a Chrome browser extension that provides AI-powered assistance by
+    analyzing the content of the web pages you are viewing. This policy explains what
+    data AutoGlance accesses, how it is used, and what is never collected.
+  </p>
+
+  <h2>Data We Do NOT Collect</h2>
+  <p>AutoGlance does not collect, transmit, store, or share any personal data. Specifically:</p>
+  <ul>
+    <li>We do not operate any backend server or database.</li>
+    <li>We do not receive, log, or retain your API keys, browsing history, or page content.</li>
+    <li>We do not use analytics, tracking pixels, or third-party telemetry services.</li>
+    <li>We do not sell or share any information with third parties.</li>
+  </ul>
+
+  <h2>API Keys</h2>
+  <p>
+    AutoGlance requires you to provide your own API key for an AI provider (such as
+    Anthropic, OpenAI, or Google Gemini). Your API key is stored exclusively in
+    Chrome's local storage on your own device using the <code>chrome.storage.local</code>
+    API. It never leaves your device except to be sent directly to the AI provider's
+    API endpoint when you make a request.
+  </p>
+
+  <h2>Page Content and Screenshots</h2>
+  <p>
+    When you ask AutoGlance a question, the extension may capture the visible content
+    or a screenshot of the current tab to provide context to the AI model. This data is
+    sent directly from your browser to the AI provider you have configured (e.g.,
+    <code>api.anthropic.com</code>, <code>api.openai.com</code>, or
+    <code>generativelanguage.googleapis.com</code>).
+  </p>
+  <p>
+    AutoGlance never sees, intercepts, or stores this data. All communication is
+    between your browser and the AI provider. Please review the privacy policy of your
+    chosen AI provider for information on how they handle your data.
+  </p>
+
+  <h2>Permissions Explained</h2>
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Reason</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>activeTab</code> / <code>&lt;all_urls&gt;</code></td>
+        <td>Read the content of the page you are viewing so AutoGlance can answer questions about it</td>
+      </tr>
+      <tr>
+        <td><code>storage</code></td>
+        <td>Save your settings and API key locally on your device only</td>
+      </tr>
+      <tr>
+        <td><code>scripting</code></td>
+        <td>Extract page content and capture screenshots for AI context</td>
+      </tr>
+      <tr>
+        <td><code>sidePanel</code></td>
+        <td>Open the AutoGlance chat interface in Chrome's side panel</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Children's Privacy</h2>
+  <p>
+    AutoGlance is not directed at children under the age of 13 and does not knowingly
+    collect any information from children.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    If this privacy policy is updated, the revised version will be published at this
+    URL with an updated date. Continued use of the extension after changes are posted
+    constitutes acceptance of the revised policy.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    <strong>Gilad Shaked</strong><br />
+    <a href="mailto:gilad8@post.bgu.ac.il">gilad8@post.bgu.ac.il</a>
+  </p>
+</main>
+
+<footer>
+  &copy; 2025 Gilad Shaked &mdash; AutoGlance
+</footer>
+
+</body>
+</html>
